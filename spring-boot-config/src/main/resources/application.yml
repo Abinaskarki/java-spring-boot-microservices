@@ -1,0 +1,22 @@
+spring:
+  application:
+    name: spring-boot-config
+my:
+  greeting: Hello World!
+  list:
+    values: One,Two,Three
+#db:
+#  connection: "{connectionString: 'sfs sf', username: 'User', password: 'pass'}"
+#  host: 127.0.0.1
+#  port: 8080
+
+  management:
+    endpoints:
+      web:
+        exposure:
+          include: "*"
+
+  spring:
+    cloud:
+      config:
+        uri: http://localhost:8888
